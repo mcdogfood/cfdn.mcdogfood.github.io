@@ -1,0 +1,284 @@
+/* ------ Calendar Title ------ */
+h7 {
+	margin:			0px;
+	padding-top:	2px;
+	padding-bottom:	22px;
+	padding-left:	10px;
+	padding-right:	10px;
+	font-size:		160%;
+	font-weight:	bold;
+	color:			#333333;
+	text-align:		center;
+	display:		block;
+}
+
+/* ------ Calendar Buttons ------ */
+#nextBtn {
+	display:				block;
+	width:					25px;
+	height:					30px;
+	background:				url("img/calendar_rightbtn.png") no-repeat 0 0;
+	float:					right;
+}
+
+#nextBtn:hover { 
+	background-position:	0 -30px;
+	text-decoration:		none;
+}
+
+#nextBtn span {
+	position:				absolute;
+	display:				none;
+}
+
+#prevBtn {
+	display:				block;
+	width:					25px;
+	height:					30px;
+	background:				url("img/calendar_leftbtn.png") no-repeat 0 0;
+	float:					left;
+}
+
+#prevBtn:hover { 
+	background-position:	0 -30px;
+	text-decoration:		none;
+}
+
+#prevBtn span {
+	position: absolute;
+	display: none;
+}
+
+/* ------ Calendar ------ */
+table.calendar {
+	width:			100%;
+	border-left:	2px solid #999;
+	}
+	
+tr.calendarRow	{
+	}
+	
+td.calendarDay	{
+	background:		#FFF;
+	min-height:		80px;
+	font-size:		11px;
+	position:		relative;
+	}
+	
+* html div.calendarDay {
+	background:		#FFF;
+	height:			80px;
+	}
+	
+td.calendarDay:hover {
+	background:		#ECEFF5;
+	}
+	
+td.calendarDayNp {
+	background:		#EEE;
+	min-height:		80px;
+	}
+	
+* html div.calendarDayNp {
+	height:			80px;
+	}
+	
+td.calendarDayHead {
+	background:		#CCC;
+	font-weight:	bold;
+	text-align:		center;
+	width:			14%;/*80px;*/
+	padding:		5px;
+	border-bottom:	2px solid #999;
+	border-top:		2px solid #999;
+	border-right:	2px solid #999;
+	}
+	
+div.dayNumber {
+	background:		#999;
+	padding:		5px;
+	color:			#FFF;
+	font-weight:	bold;
+	float:			right;
+	margin:			-5px -5px 0 0;
+	width:			20px;
+	text-align:		center;
+	}
+	
+/* shared calendar */
+td.calendarDay, td.calendarDayNp {
+	min-width:			14%;/*80px;*/
+	padding:		5px;
+	border-bottom:	2px solid #999;
+	border-right:	2px solid #999;
+	}
+	
+/* ------ Drop Text for Calendar ------ */
+span.droptext {
+	border-bottom:		thin dotted;
+	background:			#FFEEDD;
+	}
+	
+span.droptext:hover {
+	text-decoration:	none;
+	background:			#F7F6C8;
+	z-index:			6;
+	}
+
+span.droptext span {
+	position:			absolute;
+	left:				-9999px;
+	margin:				20px 0 0 0px;
+	padding:			3px 3px 3px 3px;
+	border-style:		solid;
+	border-color:		black;
+	border-width:		1px;
+	z-index:			6;
+	}
+
+span.droptext:hover span {
+	left:				2%;
+	background:			#FF0000;
+	} 
+
+span.droptext span {
+	position:			absolute;
+	left:				-9999px;
+	margin:				4px 0 0 0px;
+	padding:			3px 3px 3px 3px; 
+	border-style:		solid;
+	border-color:		black;
+	border-width:		1px;
+	}
+	
+span.droptext:hover span {
+	margin:				0px 0 0 10px;
+	background:			#F7F6C8;
+	z-index:			6;
+	} 
+
+/* ----- prices ----- */
+table.prices {
+	border:			2px;
+	width:			100%;
+	background:		#F7F6C8;
+	border-style: 	solid;
+	border-width: 	2px;
+	border-color:	#666666;
+	margin-left:	0px;
+	margin-right:	0px;
+}
+
+tr.pricesRowOdd {
+	border-width: 	1px;
+	border-style: 	none none dotted none;
+	background-color: #FFFDDD;
+}
+
+tr.pricesRowEven {
+	border-width: 	1px;
+	border-style: 	none none dotted none;
+}
+
+td.pricesDesc {
+	width:			70%;
+	padding-top:	8px;
+	padding-left:	8px;
+	padding-right:	8px;
+	text-align:		left;
+	vertical-align:	top;
+}
+
+td.pricesCost {
+	width:			30%;
+	padding-top:	8px;
+	padding-left:	8px;
+	padding-right:	8px;
+	text-align:		left;
+	vertical-align:	top;
+}
+
+img.security {
+	vertical-align: middle;
+	border-width: 	1px;
+	border-style: 	dotted;
+	background:		#aaaaaa;
+}
+
+
+
+
+
+/* ----- Admin ----- */
+.eventForm {
+	margin-left:	0px;
+	float:			left;
+	padding-left:	0px;
+	padding-top:	8px;
+}
+
+table.evTable {
+	border:			2px;
+	width:			100%;
+	border-style: 	solid;
+	border-width: 	2px;
+	border-color:	#666666;
+	margin-left:	0px;
+	margin-right:	0px;
+	background:		#666666;
+}
+
+tr.evRow {
+}
+
+td.evHdr {
+	width:			25%;
+	border-style: 	solid;
+	border-width: 	1px;
+	border-color:	#666666;
+	padding-left:	8px;
+	padding-right:	8px;
+	padding-top:	3px;
+	padding-bottom:	3px;
+	text-align:		left;
+	vertical-align:	top;
+	background:		#E6E5B7;
+	font-weight:	bold;
+}
+
+td.evContent {
+	width:			75%;
+	border-style: 	solid;
+	border-width: 	1px;
+	border-color:	#666666;
+	padding-left:	8px;
+	padding-right:	8px;
+	padding-top:	3px;
+	padding-bottom:	3px;
+	text-align:		left;
+	vertical-align:	top;
+	background:		#F7F6C8;
+}
+
+#submit {
+	border: 			2px solid #000000;
+	background: 		#808080;
+	color: 				#FFFFFF;
+	font-weight:		bold;
+	padding-top: 		2px;
+	padding-bottom: 	2px;
+	padding-left: 		4px;
+	padding-right: 		4px;
+}
+
+#submit:hover {
+	border: 			2px solid #000000;
+	background: 		#606060;
+	color: 				#FFFFFF;
+	font-weight:		bold;
+	padding-top: 		2px;
+	padding-bottom: 	2px;
+	padding-left: 		4px;
+	padding-right: 		4px;
+	cursor:				pointer;
+}
